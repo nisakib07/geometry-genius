@@ -107,13 +107,13 @@
                   id="parallelogramBase"
                   type="text"
                   class="border border-black w-20 bg-gray-200 px-4"
-                  placeholder="w" />
+                  placeholder="b" />
                 <span class="ml-2">cm</span>
                 <input
                   id="parallelogramHeight"
                   type="text"
                   class="ml-2 border border-black w-20 bg-gray-200 px-4"
-                  placeholder="l" />
+                  placeholder="h" />
                 <span class="ml-2">cm</span>
               </p>
 
@@ -131,36 +131,36 @@
             </div>
           </div>
 
-          <!-- Parallelogram -->
+          <!-- Rhombus -->
 
           <div class="card bg-base-100 shadow-xl">
             <figure>
-              <img src="./images/parallelogram.png" alt="Shoes" />
+              <img src="./images/rhombus.png" alt="Shoes" />
             </figure>
             <div class="card-body">
-              <h2 class="text-2xl font-semibold text-center">Parallelogram</h2>
-              <p class="text-center mb-4">Area (A) = b x h</p>
+              <h2 class="text-2xl font-semibold text-center">rhombus</h2>
+              <p class="text-center mb-4">Area (A) =0.5 x d1 x d2</p>
               <p>
                 <input
-                  id="parallelogramBase"
+                  id="rhombusd1"
                   type="text"
                   class="border border-black w-20 bg-gray-200 px-4"
-                  placeholder="w" />
+                  placeholder="d1" />
                 <span class="ml-2">cm</span>
                 <input
-                  id="parallelogramHeight"
+                  id="rhombusd2"
                   type="text"
                   class="ml-2 border border-black w-20 bg-gray-200 px-4"
-                  placeholder="l" />
+                  placeholder="d2" />
                 <span class="ml-2">cm</span>
               </p>
 
               <p class="mx-4">
-                Area : <span id="parallelogramResult">0</span> cm<sup>2</sup>
+                Area : <span id="rhombusResult">0</span> cm<sup>2</sup>
               </p>
               <div class="card-actions">
                 <button
-                  onclick="parallelogramArea()"
+                  onclick="rhombusArea()"
                   class="btn btn-primary w-full"
                   id="">
                   Calculate
@@ -169,36 +169,36 @@
             </div>
           </div>
 
-          <!-- Parallelogram -->
+          <!-- Pentagon -->
 
           <div class="card bg-base-100 shadow-xl">
             <figure>
-              <img src="./images/parallelogram.png" alt="Shoes" />
+              <img src="./images/pentagon.png" alt="Shoes" />
             </figure>
             <div class="card-body">
-              <h2 class="text-2xl font-semibold text-center">Parallelogram</h2>
-              <p class="text-center mb-4">Area (A) = b x h</p>
+              <h2 class="text-2xl font-semibold text-center">pentagon</h2>
+              <p class="text-center mb-4">Area (A) = 0.5 * p x a</p>
               <p>
                 <input
-                  id="parallelogramBase"
+                  id="pentagonPerimeter"
                   type="text"
                   class="border border-black w-20 bg-gray-200 px-4"
-                  placeholder="w" />
+                  placeholder="p" />
                 <span class="ml-2">cm</span>
                 <input
-                  id="parallelogramHeight"
+                  id="pentagonApothem"
                   type="text"
                   class="ml-2 border border-black w-20 bg-gray-200 px-4"
-                  placeholder="l" />
+                  placeholder="a" />
                 <span class="ml-2">cm</span>
               </p>
 
               <p class="mx-4">
-                Area : <span id="parallelogramResult">0</span> cm<sup>2</sup>
+                Area : <span id="pentagonResult">0</span> cm<sup>2</sup>
               </p>
               <div class="card-actions">
                 <button
-                  onclick="parallelogramArea()"
+                  onclick="pentagonArea()"
                   class="btn btn-primary w-full"
                   id="">
                   Calculate
@@ -245,8 +245,9 @@
             </div>
           </div>
         </div>
-        <div class="w-[430px]">
+        <div class="w-[430px] text-center lg:text-left">
           <p class="text-4xl">Area Calculator</p>
+          <div id="elementEntry"></div>
         </div>
       </section>
     </main>
